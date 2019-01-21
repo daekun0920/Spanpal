@@ -18,13 +18,10 @@
 <div class="sub-header">
 	<nav>
 		<ul>
-			<li>Home</li>
-			<li>Search</li>
-			<li>Online</li>
-			<c:if
-				test="${sessionScope.user_id != null && sessionScope.user_id != ''}">
-				<li>Messages</li>
-			</c:if>
+			<li onclick="location.href='/'">Home</li>
+			<li onclick="location.href='/search.do'">Search</li>
+			<li onclick="location.href='/online.do'">Online</li>
+			<li onclick="location.href='/messages.do'">Messages</li>
 		</ul>
 	</nav>
 </div>

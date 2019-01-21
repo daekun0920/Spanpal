@@ -12,7 +12,10 @@
 <body>
 <%@include file="/WEB-INF/views/header/header.jsp" %>
 <div class="bdy-cont">
-
+	${vo.first_name };
+	${vo.gender };
+	${vo.email_su };
+	${vo.birthday };
 </div>
 <%@include file="/WEB-INF/views/footer/footer.jsp" %>
 </body>

@@ -29,21 +29,24 @@
 							Meet new people now!
 						</div>
 						<br>
+						<form action="/signUp.do" method="POST">
 						<div style="text-align:right;margin:0 auto;display:inline-block;">
-							First Name : <label></label><input>
+							First Name : <label></label><input name="first_name" id="first_name">
 							<br>
 							<br>
-							Email : <label></label><input>
+							Email : <label></label><input name="email_su" id="email_su">
 							<br>
 							<br>
-							Birthday : <input type="date">
+							Birthday : <input type="date" id="birthday" name="birthday">
 							<br>
 							<br>
-							I am <input type="radio"> Female <input type="radio"> Male
+							I am <input name="gender" type="radio" value="F"> Female <input name="gender" type="radio" value="M"> Male
 						</div>
+						
 						<div class="text-center"> 
-							<button class="btn btn-info sign-in">Sign In</button>
+							<input class="btn btn-info sign-in" type="submit" value="Sign In">
 						</div>
+						</form>
 					</div>
 				</td>
 			</tr>
@@ -77,4 +80,7 @@
 	
 	<%@include file="/WEB-INF/views/footer/footer.jsp"%>
 </body>
+<script>
+
+</script>
 </html>

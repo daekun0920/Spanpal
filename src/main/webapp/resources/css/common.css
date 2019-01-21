@@ -49,6 +49,7 @@ html {
 	height:300px;
 	margin:10px;
 	border:1px solid #DDD;
+	border-radius:7px;
 }
 .header {
 	border-bottom:1px solid #DDD;
@@ -83,6 +84,7 @@ html {
 	height:80px;
 	margin-left:40px;
 	margin-right:40px;
+	margin-bottom:60px;
 }
 ul li {
 	display:inline;
