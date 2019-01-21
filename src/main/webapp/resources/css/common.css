@@ -1,0 +1,99 @@
+<style>
+.logo {
+	width:310px;
+	height:75px;
+	margin-top:15px;
+}
+body {
+	height:100%;
+	margin:0 auto;
+	padding:0;
+}
+html {
+	margin:0;
+	width:100%;
+	height:100%;
+	padding:0;
+}
+.text-center {
+	text-align:center;
+}
+.pad-40 {
+	padding-top:40px;
+	padding-bottom:40px;
+}
+.bottom {
+	position:absolute;
+	bottom:0;	
+	left:0;
+	right:0;
+	border-radius:7px;
+	width:65%;
+	border-top:1px solid #DDD;
+	border-right:1px solid #DDD;
+	border-left:1px solid #DDD;
+	margin:0 auto;
+}
+.div-middle {
+	margin:0 auto;
+	text-align:center;
+}
+.bdy-cont {
+	margin:0 auto;
+	width:65%;
+	height:100%;
+	border:1px solid #DDD;
+	border-radius:7px;
+}
+.sign-up {
+	height:300px;
+	margin:10px;
+	border:1px solid #DDD;
+}
+.header {
+	border-bottom:1px solid #DDD;
+	border-right:1px solid #DDD;
+	border-left:1px solid #DDD;
+	padding-bottom:7px;
+	width:65%;
+	margin:0 auto;
+	border-radius:7px;
+	margin-bottom:10px;
+}
+.sign-in {
+	 margin-top:17px;
+	 margin-left:10px;
+}
+.menu_tbl {
+	display:inline;
+	float:right;
+	margin-top:10px;
+	margin-right:15px;
+}
+.sub-header {
+	border:1px solid #DDD;
+	width:65%;
+	border-radius:7px;
+	margin:0 auto;
+	padding-top:8px;
+	margin-bottom:10px;
+}
+.smp-img {
+	width:80px;
+	height:80px;
+	margin-left:40px;
+	margin-right:40px;
+}
+ul li {
+	display:inline;
+	border-left:1px solid #DDD;
+	font-size:15px;
+	color:#BBB;
+	padding: 0 10px;
+	cursor:pointer;
+}
+ul li:first-child{border-left:none;} 
+li:hover {
+	color:#EEE;	
+}
+</style>
