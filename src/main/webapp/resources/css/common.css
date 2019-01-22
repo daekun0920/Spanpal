@@ -18,6 +18,39 @@ html {
 .text-center {
 	text-align:center;
 }
+.ht-600 {
+	height:600px;
+}
+.red {
+	color:red;
+}
+.ovr-y {
+	overflow-y:scroll;
+	width:800px;
+	height:400px;
+	float:right;
+	margin:15px;
+	border:1px solid #DDD;
+	border-radius:7px;	
+}
+.clear {
+	clear:both;
+}
+textarea {
+    resize: none;
+}
+.mg-15 {
+	margin:15px;
+}
+.mg-25 {
+	margin:25px;
+}
+.mg-30 {
+	margin:30px;
+}
+.mg-50 {
+	margin:50px;
+}
 .pad-40 {
 	padding-top:40px;
 	padding-bottom:40px;

@@ -21,6 +21,7 @@
 			<li onclick="location.href='/'">Home</li>
 			<li onclick="location.href='/search.do'">Search</li>
 			<li onclick="location.href='/online.do'">Online</li>
+			<li onclick="location.href='/messages.do'">Friends</li>
 			<li onclick="location.href='/messages.do'">Messages</li>
 		</ul>
 	</nav>

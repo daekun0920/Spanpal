@@ -7,6 +7,7 @@
 <meta charset="UTF-8">
 <title>Spanpal</title>
 <%@include file="/resources/css/common.css" %>
+<script type="text/javascript" src="/resources/js/jquery-3.3.1.js"></script>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>

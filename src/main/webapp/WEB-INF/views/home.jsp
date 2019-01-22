@@ -30,17 +30,17 @@
 						</div>
 						<br>
 						<form action="/signUp.do" method="POST">
-						<div style="text-align:right;margin:0 auto;display:inline-block;">
-							First Name : <label></label><input name="first_name" id="first_name">
+						<div style="text-align:left;margin:0 auto;display:inline-block;">
+							Name : <input name="user_name" id="user_name">
 							<br>
 							<br>
-							Email : <label></label><input name="email_su" id="email_su">
+							Email : <input name="user_email" id="user_email">
 							<br>
 							<br>
-							Birthday : <input type="date" id="birthday" name="birthday">
+							Age : <input type="number" max="99" min="0" id="user_age" name="user_age">
 							<br>
 							<br>
-							I am <input name="gender" type="radio" value="F"> Female <input name="gender" type="radio" value="M"> Male
+							I am <input name="user_gender" type="radio" value="F"> Female <input name="user_gender" type="radio" value="M"> Male
 						</div>
 						
 						<div class="text-center"> 
