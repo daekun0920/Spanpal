@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- WEB-INF/mybatis.xml -->
+<!DOCTYPE configuration PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+	
+	<!-- MyBatis 옵션 설정.. -->
+	
+	<!-- Mapper에서 사용하는 자료형의 별칭 -->
+	<typeAliases>	
+		<typeAlias type="com.daekun.spanpal.model.SignUpVO" alias = "signUpVo"/>
+	</typeAliases>
+	
+	
+</configuration>

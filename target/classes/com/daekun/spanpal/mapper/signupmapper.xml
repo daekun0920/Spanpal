@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="signupmapper">
+	<select id="selectUser" parameterType="signUpVo" resultType="signUpVo">
+		SELECT user_name,
+			   user_email,
+			   user_pw,
+			   user_age,
+			   user_lang,
+			   user_country,
+			   user_desc,
+			   use_yn
+			   FROM 
+			   	tbl_user
+			   WHERE 1=1 
+			   <if test="user_seq != null and user_seq != ''">
+			   	AND user_seq = #{user_seq}
+			   </if>
+	</select>
+	<insert id="insertUser" parameterType="signUpVo" useGeneratedKeys="true" keyProperty="user_seq">
+		INSERT INTO 
+			tbl_user (user_name, 
+					  user_email, 
+					  user_pw, 
+					  user_age, 
+					  user_lang, 
+					  user_country, 
+					  user_desc, 
+					  use_yn) 
+			VALUES (#{user_name},
+					#{user_email},
+					#{user_pw},
+					#{user_age},
+					#{user_lang},
+					#{user_country},
+					#{user_desc},
+					'N')
+	</insert>
+	<update id="updateUserUseYN" parameterType="signUpVo">
+		UPDATE tbl_user SET USE_YN = 'Y' WHERE user_seq = #{user_seq}
+	</update>
+</mapper>

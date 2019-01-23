@@ -44,7 +44,7 @@
 						</div>
 						
 						<div class="text-center"> 
-							<input class="btn btn-info sign-in" type="submit" value="Sign In">
+							<input class="btn btn-info sign-in" type="submit" value="Sign Up">
 						</div>
 						</form>
 					</div>

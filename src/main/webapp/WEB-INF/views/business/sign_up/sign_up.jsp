@@ -14,6 +14,7 @@
 <body>
 	<%@include file="/WEB-INF/views/header/header.jsp"%>
 	<div class="bdy-cont">
+		<form action="/signUpSubmit.do" method="post" id="signup">
 		<table class="mg-25" style="display:inline;">
 			<tr>
 				<td><label for="user_name">Name</label><input id="user_name"
@@ -290,8 +291,8 @@
 			</tr>
 			<tr>
 				<td>My mother tongue is <input type="radio" id="female"
-					name="user_lang" class="" value=""> Spanish <input
-					type="radio" id="male" name="user_lang" class="" value="">
+					name="user_lang" class="" value="SP"> Spanish <input
+					type="radio" id="male" name="user_lang" class="" value="KR">
 					Korean
 				</td>
 			</tr>
@@ -532,10 +533,13 @@
 			</ul>
 		</div>
 		<div class="text-center clear">
-			<button class="btn btn-info sign-in">Sign Up</button>
+			<input id="term_act" name="" type="checkbox"> I accept this term and policy.
 		</div>
+		<div class="text-center clear">
+			<button class="btn btn-info sign-in" form="signup">Sign Up</button>
+		</div>
+		</form>
 	</div>
-	
 	<%@include file="/WEB-INF/views/footer/footer.jsp"%>
 </body>
 <script>
