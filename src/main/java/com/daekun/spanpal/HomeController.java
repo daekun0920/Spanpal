@@ -45,7 +45,7 @@ public class HomeController {
 		return "/business/online/online";
 	}
 
-	@RequestMapping(value = "/messages")
+	@RequestMapping(value = "/messages.do")
 	public String messages(Locale locale, Model model) {
 
 		return "/business/messages/messages";

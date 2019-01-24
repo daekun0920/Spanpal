@@ -30,6 +30,11 @@
         <interceptor>
             <mapping path="/**"/>
             <exclude-mapping path="/"/>
+            <exclude-mapping path="/signUp.do"/>
+            <exclude-mapping path="/signIn.do"/>
+            <exclude-mapping path="/confirm.do"/>
+            <exclude-mapping path="/mail_format.do"/>
+            <exclude-mapping path="/signUpSubmit.do"/>
             <beans:ref bean="authenticationInterceptor"/>
         </interceptor>
     </interceptors>

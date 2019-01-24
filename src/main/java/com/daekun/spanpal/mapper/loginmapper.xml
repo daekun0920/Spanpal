@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="loginmapper">
+	<select id="selectLogin" parameterType="signUpVo" resultType="signUpVo">
+		SELECT user_name,
+			   user_email,
+			   user_pw,
+			   user_age,
+			   user_lang,
+			   user_country,
+			   user_desc,
+			   use_yn
+			   FROM 
+			   	tbl_user
+			   WHERE 1=1 
+			   <if test="user_seq != null and user_seq != ''">
+			   	AND user_seq = #{user_seq}
+			   </if>
+			   <if test="user_email != null and user_email != ''">
+			   	AND user_email = #{user_email}
+			   </if>
+			   <if test="user_pw != null and user_pw != ''">
+			   	AND user_pw = #{user_pw}
+			   </if>
+			   
+	</select>
+</mapper>

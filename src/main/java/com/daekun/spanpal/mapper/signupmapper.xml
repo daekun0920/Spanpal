@@ -16,6 +16,13 @@
 			   <if test="user_seq != null and user_seq != ''">
 			   	AND user_seq = #{user_seq}
 			   </if>
+			   <if test="user_email != null and user_email != ''">
+			   	AND user_email = #{user_email}
+			   </if>
+			   <if test="user_pw != null and user_pw != ''">
+			   	AND user_pw = #{user_pw}
+			   </if>
+			   
 	</select>
 	<insert id="insertUser" parameterType="signUpVo" useGeneratedKeys="true" keyProperty="user_seq">
 		INSERT INTO 

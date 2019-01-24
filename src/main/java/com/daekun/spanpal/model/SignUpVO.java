@@ -10,6 +10,11 @@ public class SignUpVO {
 	private String user_country;
 	private String user_gender;
 	private String user_desc;
+	private String use_yn;
+	private String message;
+	private boolean result;
+	
+	
 	public String getUser_seq() {
 		return user_seq;
 	}
@@ -63,6 +68,24 @@ public class SignUpVO {
 	}
 	public void setUser_gender(String user_gender) {
 		this.user_gender = user_gender;
+	}
+	public String getUse_yn() {
+		return use_yn;
+	}
+	public void setUse_yn(String use_yn) {
+		this.use_yn = use_yn;
+	}
+	public boolean isResult() {
+		return result;
+	}
+	public void setResult(boolean result) {
+		this.result = result;
+	}
+	public String getMessage() {
+		return message;
+	}
+	public void setMessage(String message) {
+		this.message = message;
 	}
 		
 }

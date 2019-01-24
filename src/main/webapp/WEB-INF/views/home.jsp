@@ -1,24 +1,24 @@
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE html>
 <html>
 <head>
 <meta charset="UTF-8">
 <title>Spanpal</title>
+<script src="/resources/js/jquery-3.3.1.js"></script>
 <%@include file="/resources/css/common.css"%>
 <link rel="stylesheet"
 	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
 </head>
 <body>
 	<%@include file="/WEB-INF/views/header/header.jsp"%>
-
 	<div class="bdy-cont">
 		<table>
 			<tr>
 				<td style="width:70%;">
 					Spanpal is to find your new friends and explore each others
-					culture! On InterPals, a pen pal is more than just a friend for
+					culture! On Spanpal, a pen pal is more than just a friend for
 					letter writing! People in our community connect with native
 					speakers for language practice, meet friends for cultural exchange
 					and find travel buddies.
@@ -31,7 +31,7 @@
 						<br>
 						<form action="/signUp.do" method="POST">
 						<div style="text-align:left;margin:0 auto;display:inline-block;">
-							Name : <input name="user_name" id="user_name">
+							Name : <input name="user_name">
 							<br>
 							<br>
 							Email : <input name="user_email" id="user_email">
@@ -77,10 +77,6 @@
 			<img class="smp-img" src="/resources/img/LogoMakr_1WpWIr.png" alt="..." class="img-rounded">
 		</div>
 	</div>
-	
 	<%@include file="/WEB-INF/views/footer/footer.jsp"%>
 </body>
-<script>
-
-</script>
 </html>
